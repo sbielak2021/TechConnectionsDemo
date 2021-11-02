@@ -1,0 +1,49 @@
+<html>
+ <head>
+  <style>
+   .column 
+   {
+    float: left;
+    width: 50%;
+   }
+
+   .row:after 
+   {
+    content: "";
+    display: table;
+    clear: both;
+   }
+  </style>
+ </head>
+ <body>
+   
+  <h2 align = "center"> <input type="button" value = "Home"> </h2>
+  <hr>	
+
+  <div class="row">
+   <div class="column">
+    <h2>
+    &emsp; Account Type: Student <input type="button" value = "Senior"> <br> <br>
+    &emsp; Name: <input type = "text"> <br> <br>
+    &emsp; Phone Number: <input type = "text"> <br> <br>
+    &emsp; Email: <input type = "text"> <br> <br>
+    </h2>
+  </div>
+   <div class="column">
+    <h2>
+    &emsp; Tech Knowledge (Check all that Apply): <br>
+    &emsp; <input type = "checkbox"> Computer Troubleshooting <br>
+    &emsp; <input type = "checkbox"> TV Repair <br>
+    &emsp; <input type = "checkbox"> Email/Scam Education <br>
+    &emsp; <input type = "checkbox"> Other <br>
+    &emsp; <textarea rows = "5" cols = "75"> </textarea> <br>
+    &emsp; Availability (at least 5 hours): <br>
+    &emsp; Monday <input type = "time"> to <input type = "time"> <br>
+    </h2> 
+   </div>
+  </div>
+  <h2 align = "center"> <input type = "button" value = "Submit"> </h2>
+	
+
+ </body>
+</html>

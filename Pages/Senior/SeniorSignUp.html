@@ -1,16 +1,25 @@
-<html>
+<html>    <head>
+    <script src = "..\..\js_buttons.js"></script>
+  <link rel="stylesheet" type="text/css" href="..\..\grid_helper.css" media="screen"/>
+ </head>
  <body>
    
-  <h2 align = "center"> <input type="button" value = "Home"> </h2>
-  <hr>
-  <h2>
-  &emsp; Account Type: Senior <input type="button" value = "Student"> <br> <br>
+  <div class="headerAndText container">
+    <div class = "header areas">
+      <h2 >&emsp; <button id = "..\..\Homepage.html"  onClick = "send_to_page(this.id)">Home</button>
+      </h2>
+    </div>
+    <hr>  
+    <div class="left areas leftText">
+    <h2>
+  &emsp; Account Type: Senior <button id = "..\Student\StudentSignUp.html"  onClick = "send_to_page(this.id)">Student</button>  <br> <br>
   &emsp; Name: <input type = "text"> <br> <br>
   &emsp; Phone Number: <input type = "text"> <br> <br>
   &emsp; Email: <input type = "text"> <br> <br>
   &emsp; Address: <input type = "text"> <br> <br>
   &emsp; Add Student Helper: <input type = "text">
-  <h2 align = "center"> <input type = "button" value = "Submit"> </h2>
-	
+  <h2 >&emsp; <input type = "button" value = "Submit"> </h2>
+    </div></div>
  </body>
 </html>
+

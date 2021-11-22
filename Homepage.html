@@ -1,28 +1,26 @@
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="css_stuff.css" media="screen"/>
- </head>
- <body>
+    <head>
+    <script src = "js_buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="grid_helper.css" media="screen"/>
+  </head>
+  <body>
+    <div class = "homepage container">
+      <div class = "header areas">
+        <h1>Welcome to Senior Tech Connections</h1>
+      </div>
 
-  <h1>Welcome to Senior Tech Connections</h1>
-  <hr>
-
-  <div class="row">
-   <div class="column">
-    <h2>Click Here to Sign Up</h2>
-    <h2> <input type = "button" value = "Sign Up"> </h2>
+      <div class = "left areas">
+        <h2>Click Here to Sign Up</h2>
+        <h2> <button id = 'pages/student/StudentSignUp.html' onClick = "send_to_page(this.id)">Student Sign Up</button></h2>
+        <h2> <button id = 'pages/senior/SeniorSignUp.html' onClick = "send_to_page(this.id)">Senior Sign Up</button></h2>
+      </div>
     
+      <div class = "right areas">
+        <h2>Click Here to Login</h2>
+        <h2> <button id = 'pages/student/StudentHomepage.html' onClick = "send_to_page(this.id)">Student Login</button></h2>
+        <h2> <button id = 'pages/senior/SeniorHomepage.html' onClick = "send_to_page(this.id)">Senior Login</button></h2>
+      </div>
+    </div>
 
-  </div>
-   <div class="column">
-    <h2>Click Here to Login</h2>
-    <h2> <input type = "button" value = "Student Login"</h2>
-    <h2> <input type = "button" value = "Senior Login"</h2>
-   </div>
-  </div>
-
-  
-
-  
- </body>
+  </body>
 </html>

@@ -1,56 +1,53 @@
 <html>
- <head>
-  <link rel="stylesheet" type="text/css" href="student_calender.css" media="screen"/>
- </head>
- <body>
-  <h2 align = "center">
-  <input type = "button" Value = "Home">
-  &emsp; <input type = "button" Value = "View Profile">
-  &emsp; <input type = "button" Value = "Find Seniors">
-  &emsp; <input type = "button" Value = "Calendar">
-  &emsp; <input type = "button" Value = "Log-Out">
-  </h2>
+  <head>
+    <script src = "..\..\js_buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="student_calender.css" media="screen"/>
+    <link rel="stylesheet" type="text/css" href="..\..\grid_helper.css" media="screen"/>
+  </head>
+  <body>
+    <div class="headerAndText container">
+      <div class = "header areas">
+        <h2>
+        <button id = "StudentHomepage.html"  onClick = "send_to_page(this.id)">Home</button>
+        &emsp; <button id = "StudentViewProfile.html" onClick = "send_to_page(this.id)">View Profile</button> 
+        &emsp; <button id = "FindSeniors.html" onClick = "send_to_page(this.id)">Find Seniors</button> 
+        &emsp; <button id = "StudentCalendar.html" onClick = "send_to_page(this.id)">Calendar</button>
+        &emsp; <button id = "..\..\Homepage.html"  onClick = "send_to_page(this.id)">Log-Out</button>
+        &emsp; <button id = "..\..\Help.html"  onClick = "send_to_page(this.id)">Help</button>
+        </h2>
+      </div>
 
-  <div class="row">
-   <div class="column">
-    <h2 align = "center"> Sunday </h2>
-    <h2 align = "center"> November 1st </h2>
-  </div>
-   <div class="column">
-    <p align = "center"> Student: </p> 
-    <p align = "center"> Senior </p> 
-    <p align = "center"> Problem: </p> 
-    <p align = "center"> Time: </p> 
-    <hr>
-    <p align = "center"> Student: </p> 
-    <p align = "center"> Senior </p> 
-    <p align = "center"> Problem: </p> 
-    <p align = "center"> Time: </p> 
-   </div>
-  </div>
-  <hr>
+      <div class="left areas leftText">
+        <h2 > Sunday </h2>
+        <h2 > November 1st </h2>
+        <p > Student: </p>
+        <p > Senior </p>
+        <p > Problem: </p>
+        <p > Time: </p>
+        <hr>
+        <p > Student: </p>
+        <p > Senior </p>
+        <p > Problem: </p>
+        <p > Time: </p>
+      <hr>
 
-  <div class="row">
-   <div class="column">
-    <h2 align = "center"> Monday </h2>
-    <h2 align = "center"> November 2nd </h2>
-  </div>
-   <div class="column">
-    <p align = "center"> Student: </p> 
-    <p align = "center"> Senior </p> 
-    <p align = "center"> Problem: </p> 
-    <p align = "center"> Time: </p> 
-   </div>
-  </div>
-  <input type = "button" value = "Create Appointment">
+        <h2 > Monday </h2>
+        <h2 > November 2nd </h2>
+        <p > Student: </p>
+        <p > Senior </p>
+        <p > Problem: </p>
+        <p > Time: </p>
 
-  <p> Popup window for Create Appointment </p>
-  <p> Senior Requesting Help: </p>
-  <p> <textarea rows = "3" cols = "50"> </textarea> </p>
-  <p> Time of Call/Meeting: </p>
-  <p> <textarea rows = "2" cols = "50"> </textarea> </p>
-  <p> Description of Problem: </p>
-  <p> <textarea rows = "6" cols = "50"> </textarea> </p>
-  <input type = "button" value = "Submit">
- <body>
+    <input type = "button" value = "Create Appointment" onClick = "show('showMe')">
+    <div class = "hide" id = "showMe">
+    <p> Popup window for Create Appointment </p>
+    <p> Senior Requesting Help: </p>
+    <p> <textarea rows = "3" cols = "50"> </textarea> </p>
+    <p> Time of Call/Meeting: </p>
+    <p> <textarea rows = "2" cols = "50"> </textarea> </p>
+    <p> Description of Problem: </p>
+    <p> <textarea rows = "6" cols = "50"> </textarea> </p>
+    <input type = "button" value = "Submit" onClick = "hide('showMe')">
+  </div></div>
+  <body>
 <html>

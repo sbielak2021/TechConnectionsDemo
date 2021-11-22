@@ -1,0 +1,75 @@
+
+   /**h2 {text-align: center;}
+   h1 {text-align: center;}
+   p {text-align: center;}
+   .column 
+   {
+    float: left;
+    width: 50%;
+   }
+
+   .row:after 
+   {
+    content: "";
+    display: table;
+    clear: both;
+   }
+*, *:before, *:after {
+   box-sizing: border-box;
+}
+   **/
+
+.leftText{
+   text-align: left;
+}
+
+.container {
+   text-align: center;
+   display: grid;
+   background-color: rgb(118, 175, 156);
+   border: 5px solid rgb(49, 82, 71);
+   height: 100vh;
+   
+   grid-template-rows: 1fr 7fr;
+
+   width: 100vw;
+}
+
+/**also used for sign up**/
+.homepage{
+   grid-template-areas: 
+      'header header'
+      'left right';
+      grid-template-columns: 1fr 1fr;
+}
+
+.headerAndText{
+   grid-template-areas: 
+      'header'
+      'left';
+}
+
+.areas{
+   border: 5px solid rgb(49, 82, 71);
+   padding: 2%;
+   position: relative;
+   overflow:auto;
+}
+
+.left{
+   grid-area: left;
+}
+.right{
+   grid-area: right;
+}
+.header{
+   grid-area: header;
+}
+
+.noLeft{
+   border-left: none;
+}
+
+.hide{
+   display: none;
+}

@@ -1,11 +1,20 @@
 <html>
+  <head>
+    <script src = "..\..\js_buttons.js"></script>
+    <link rel="stylesheet" type="text/css" href="..\..\grid_helper.css" media="screen"/>
+ </head>
  <body>
-  <h2 align = "center">
-  <input type = "button" Value = "Home">
-  &emsp; <input type = "button" Value = "View Profile">
-  &emsp; <input type = "button" Value = "Find Seniors">
-  &emsp; <input type = "button" Value = "Calendar">
-  &emsp; <input type = "button" Value = "Log-Out">
+  <div class="headerAndText container">
+    <div class = "header areas">
+  <h2>
+    <button id = "StudentHomepage.html"  onClick = "send_to_page(this.id)">Home</button>
+    &emsp; <button id = "StudentViewProfile.html" onClick = "send_to_page(this.id)">View Profile</button> 
+    &emsp; <button id = "FindSeniors.html" onClick = "send_to_page(this.id)">Find Seniors</button> 
+    &emsp; <button id = "StudentCalendar.html" onClick = "send_to_page(this.id)">Calendar</button>
+    &emsp; <button id = "..\..\Homepage.html"  onClick = "send_to_page(this.id)">Log-Out</button>
+    &emsp; <button id = "..\..\Help.html"  onClick = "send_to_page(this.id)">Help</button>
+  </div>
+  <div class = "left areas leftText">
   </h2>
    <h3> Personal Information </h3>
    <p> &emsp; Account type: Student </p>
@@ -21,7 +30,5 @@
    <p> &emsp; Rating: 3.4/5	
    <h3> Linked Senior accounts: </h3>
    <p> &emsp; Jeff Senior &emsp; <input type = "button" value = "View Profile"> <input type = "button" value = "Make Appointment"></p>
-
-
- <body>
+  </div></div><body>
 <html>
